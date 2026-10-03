@@ -143,7 +143,7 @@
             <i data-lucide="users" class="w-4 h-4 text-amber-400"></i>
           </div>
           <p id="statTotalUsers" class="text-2xl font-black text-amber-400 mt-1">0</p>
-          <span class="text-[10px] text-slate-500">ইউজার প্যানেলে যারা প্রবেশ করেছে</span>
+          <span class="text-[10px] text-slate-500">ইউজার প্যানেল বা বটে প্রবেশ করা সকল ইউজার</span>
         </div>
 
       </div>
@@ -339,7 +339,7 @@
   <!-- ==================== JAVASCRIPT MASTER ADMIN ENGINE ==================== -->
   <script>
     const BOT_TOKEN = "8879383206:AAEE94yxg0j36baUs1B0VY_eis2SISp9YvU";
-    const WORKER_URL = "https://groupxguard.myalorhawa.workers.dev";
+    const WORKER_URL = "https://groupguard.myalorhawa.workers.dev";
     
     let defaultGroupList = [
       { id: "-1002680814875", title: "আলোর হাওয়া গ্রুপ", username: "" }
@@ -386,19 +386,40 @@
         localStorage.setItem('agg_admin_groups', JSON.stringify(saved));
       }
 
-      // 1) Worker থেকে ইউজার প্যানেলে প্রবেশ করা ইউজারদের তালিকা
+      // 1) Worker থেকে ইউজার প্যানেলে প্রবেশ করা ইউজারদের তালিকা লোড
       try {
         const wr = await fetch(`${WORKER_URL}/api/users`);
         const wd = await wr.json();
-        (wd.users || []).forEach(u => {
-          if (u && u.id) {
-            discoveredUsers.set(String(u.id), {
-              id: String(u.id),
-              name: u.name || 'User',
-              username: u.username || ''
-            });
-          }
-        });
+        if (wd.ok && Array.isArray(wd.users)) {
+          wd.users.forEach(u => {
+            if (u && u.id) {
+              discoveredUsers.set(String(u.id), {
+                id: String(u.id),
+                name: u.name || 'User',
+                username: u.username || ''
+              });
+            }
+          });
+        }
+      } catch (e) {}
+
+      // 2) ব্যাকআপ স্ক্যান: টেলিগ্রাম বটে যারা /start দিয়েছে বা মেসেজ করেছে তাদের স্বয়ংক্রিয়ভাবে ক্যাচ করা
+      try {
+        const updatesRes = await callTelegram('getUpdates', { limit: 100 });
+        if (updatesRes.ok && Array.isArray(updatesRes.result)) {
+          updatesRes.result.forEach(up => {
+            const m = up.message || up.edited_message || up.callback_query?.message;
+            const from = up.message?.from || up.callback_query?.from || m?.from;
+            if (from && from.id && !from.is_bot) {
+              const uid = String(from.id);
+              const fullName = `${from.first_name || ''} ${from.last_name || ''}`.trim() || 'Telegram User';
+              const uName = from.username ? `@${from.username}` : '';
+              if (!discoveredUsers.has(uid)) {
+                discoveredUsers.set(uid, { id: uid, name: fullName, username: uName });
+              }
+            }
+          });
+        }
       } catch (e) {}
 
       persistUsers();
@@ -537,10 +558,10 @@
           name = `${r.result.first_name || ''} ${r.result.last_name || ''}`.trim() || 'User';
           username = r.result.username ? `@${r.result.username}` : '';
         } else {
-          return showToast("ব্যর্থ: ইউজার বটকে স্টার্ট করেনি", "error");
+          name = `User (${uid})`;
         }
       } catch (e) {
-        return showToast("ইউজার যাচাই করা যায়নি", "error");
+        name = `User (${uid})`;
       }
 
       discoveredUsers.set(uid, { id: uid, name, username });
@@ -552,7 +573,7 @@
       document.getElementById('sideUsersDirBadge').innerText = c;
       document.getElementById('userBroadcastCountBadge').innerText = `${c} Users`;
       renderUsersList();
-      showToast("ইউজার যোগ হয়েছে!", "success");
+      showToast("ইউজার সফলভাবে যোগ হয়েছে!", "success");
     }
 
     // --- 🌟 SEND BROADCAST TO ALL USERS INBOX 🌟 ---
@@ -581,7 +602,7 @@
             parse_mode: 'HTML',
             reply_markup: markup
           });
-          // HTML পার্সিং এরর হলে প্লেইন টেক্সটে আবার চেষ্টা
+          // HTML পার্সিং এরর হলে প্লেইন টেক্সটে চেষ্টা
           if (!res.ok && /parse entities/i.test(res.description || '')) {
             res = await callTelegram('sendMessage', {
               chat_id: u.id,
@@ -670,7 +691,7 @@
           showToast(`ইউজার ${userId}-এর ইনবক্সে মেসেজ চলে গেছে!`, "success");
           document.getElementById('directMsgText').value = '';
         } else {
-          showToast("ব্যর্থ: ইউজার বটকে স্টার্ট করেনি", "error");
+          showToast(`ব্যর্থ: ${res.description || "ইউজার বটকে স্টার্ট করেনি"}`, "error");
         }
       } catch (e) {
         showToast("মেসেজ পাঠানো যায়নি", "error");
