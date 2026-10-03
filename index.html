@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Alorhawa Group Guard — Master Admin Console</title>
+  <title>Alorhawa Group Guard  Master Admin Console</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons CDN -->
@@ -98,32 +98,32 @@
         <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-50"></i>
       </button>
 
-      <!-- 🌟 Dedicated User Inbox Broadcast Button 🌟 -->
+      <!--  Dedicated User Inbox Broadcast Button  -->
       <button onclick="switchTabAndFullScreen('userBroadcast')" data-tab="userBroadcast" class="side-nav-btn w-full p-2.5 rounded-xl text-left font-medium flex items-center justify-between transition text-slate-300 hover:bg-slate-800/60">
-        <span class="flex items-center gap-2.5"><i data-lucide="mail-plus" class="w-4 h-4 text-amber-400"></i><span>সকল ইউজারের ইনবক্সে ব্রডকাস্ট</span></span>
+        <span class="flex items-center gap-2.5"><i data-lucide="mail-plus" class="w-4 h-4 text-amber-400"></i><span>   </span></span>
         <span id="sideUserCountBadge" class="text-[10px] px-1.5 py-0.2 rounded-full bg-amber-900/50 text-amber-400">0</span>
       </button>
 
-      <!-- 🌟 All Users Directory 🌟 -->
+      <!--  All Users Directory  -->
       <button onclick="switchTabAndFullScreen('usersDir')" data-tab="usersDir" class="side-nav-btn w-full p-2.5 rounded-xl text-left font-medium flex items-center justify-between transition text-slate-300 hover:bg-slate-800/60">
-        <span class="flex items-center gap-2.5"><i data-lucide="users" class="w-4 h-4 text-emerald-400"></i><span>সকল ইউজার তালিকা (Users)</span></span>
+        <span class="flex items-center gap-2.5"><i data-lucide="users" class="w-4 h-4 text-emerald-400"></i><span>   (Users)</span></span>
         <span id="sideUsersDirBadge" class="text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-900/50 text-emerald-400">0</span>
       </button>
 
       <!-- All Groups Directory -->
       <button onclick="switchTabAndFullScreen('groupsDir')" data-tab="groupsDir" class="side-nav-btn w-full p-2.5 rounded-xl text-left font-medium flex items-center justify-between transition text-slate-300 hover:bg-slate-800/60">
-        <span class="flex items-center gap-2.5"><i data-lucide="layers" class="w-4 h-4 text-brand-500"></i><span>সকল গ্রুপ তালিকা (Groups Directory)</span></span>
+        <span class="flex items-center gap-2.5"><i data-lucide="layers" class="w-4 h-4 text-brand-500"></i><span>   (Groups Directory)</span></span>
       </button>
 
       <!-- Group Broadcast -->
       <button onclick="switchTabAndFullScreen('broadcast')" data-tab="broadcast" class="side-nav-btn w-full p-2.5 rounded-xl text-left font-medium flex items-center justify-between transition text-slate-300 hover:bg-slate-800/60">
-        <span class="flex items-center gap-2.5"><i data-lucide="megaphone" class="w-4 h-4 text-purple-400"></i><span>সকল গ্রুপে ব্রডকাস্ট</span></span>
+        <span class="flex items-center gap-2.5"><i data-lucide="megaphone" class="w-4 h-4 text-purple-400"></i><span>  </span></span>
         <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-50"></i>
       </button>
 
       <!-- Direct 1-on-1 Message -->
       <button onclick="switchTabAndFullScreen('directMsg')" data-tab="directMsg" class="side-nav-btn w-full p-2.5 rounded-xl text-left font-medium flex items-center justify-between transition text-slate-300 hover:bg-slate-800/60">
-        <span class="flex items-center gap-2.5"><i data-lucide="message-square" class="w-4 h-4 text-blue-400"></i><span>নির্দিষ্ট ইউজারকে মেসেজ</span></span>
+        <span class="flex items-center gap-2.5"><i data-lucide="message-square" class="w-4 h-4 text-blue-400"></i><span>  </span></span>
         <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-50"></i>
       </button>
     </nav>
@@ -143,7 +143,7 @@
             <i data-lucide="users" class="w-4 h-4 text-amber-400"></i>
           </div>
           <p id="statTotalUsers" class="text-2xl font-black text-amber-400 mt-1">0</p>
-          <span class="text-[10px] text-slate-500">ইউজার প্যানেল বা বটে প্রবেশ করা সকল ইউজার</span>
+          <span class="text-[10px] text-slate-500">       </span>
         </div>
 
       </div>
@@ -155,12 +155,12 @@
             <i data-lucide="mail-plus" class="w-6 h-6"></i>
           </div>
           <div>
-            <h3 class="text-sm font-bold text-white">সকল ইউজারের ইনবক্সে ওয়েবসাইট লিংক পাঠান</h3>
-            <p class="text-xs text-slate-400">ইউজারদের ব্যক্তিগত টেলিগ্রামে মেসেজ ও বাটন পাঠিয়ে সাইটে ভিজিটর বাড়ান।</p>
+            <h3 class="text-sm font-bold text-white">     </h3>
+            <p class="text-xs text-slate-400">         </p>
           </div>
         </div>
         <button onclick="switchTabAndFullScreen('userBroadcast')" class="w-full sm:w-auto px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold whitespace-nowrap shadow-md flex items-center justify-center gap-1.5 active:scale-95 transition">
-          <span>✉️ ইনবক্স ব্রডকাস্ট খুলুন</span>
+          <span>   </span>
           <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
         </button>
       </div>
@@ -172,38 +172,38 @@
             <i data-lucide="zap" class="w-5 h-5"></i>
           </div>
           <div>
-            <h3 class="text-sm font-bold text-white">Cloudflare ২৪/৭ Webhook সক্রিয়করণ</h3>
-            <p class="text-xs text-slate-400">টেলিগ্রামের সাথে ক্লাউডফ্লেয়ার সার্ভার কানেক্ট রাখুন।</p>
+            <h3 class="text-sm font-bold text-white">Cloudflare / Webhook </h3>
+            <p class="text-xs text-slate-400">     </p>
           </div>
         </div>
         <button onclick="initWebhook()" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-md whitespace-nowrap active:scale-95 transition">
-          ⚡ 1-Click Activate Webhook
+           1-Click Activate Webhook
         </button>
       </div>
 
-      <!-- 🌟 Quick User List Snapshot (Panel এ প্রবেশ করা ইউজার) 🌟 -->
+      <!--  Quick User List Snapshot  -->
       <div class="glass-card rounded-2xl p-4 sm:p-5 space-y-3">
         <div class="flex items-center justify-between pb-2 border-b border-slate-800">
           <h3 class="text-sm font-bold text-white flex items-center gap-2">
             <i data-lucide="users" class="w-4 h-4 text-emerald-400"></i>
-            <span>প্যানেলে প্রবেশ করা ইউজারগণ (All Users)</span>
+            <span>    (All Users)</span>
           </h3>
-          <button onclick="loadDashboardData(true)" class="text-xs text-brand-400 font-bold hover:underline">⚡ রিফ্রেশ</button>
+          <button onclick="loadDashboardData(true)" class="text-xs text-brand-400 font-bold hover:underline"> </button>
         </div>
 
         <div id="overviewUsersList" class="space-y-2.5 pt-1"></div>
       </div>
     </div>
 
-    <!-- ==================== 🌟 NEW TAB: BROADCAST TO ALL USERS INBOX 🌟 ==================== -->
+    <!-- ==================== TAB: BROADCAST TO ALL USERS INBOX ==================== -->
     <div id="tabContent-userBroadcast" class="tab-pane hidden space-y-4">
       <div class="glass-card rounded-2xl p-5 space-y-4 shadow-sm border border-amber-500/30">
         <div class="flex items-center justify-between pb-2 border-b border-slate-800">
           <div class="flex items-center gap-2">
             <i data-lucide="mail-plus" class="w-5 h-5 text-amber-400"></i>
             <div>
-              <h3 class="text-sm sm:text-base font-bold text-white">সকল ইউজারের ব্যক্তিগত ইনবক্সে ব্রডকাস্ট (User Inbox)</h3>
-              <p class="text-xs text-slate-400">এই মেসেজটি গ্রুপে নয়, সরাসরি প্রতিটা ইউজারের ব্যক্তিগত টেলিগ্রাম চ্যাটে যাবে।</p>
+              <h3 class="text-sm sm:text-base font-bold text-white">     (User Inbox)</h3>
+              <p class="text-xs text-slate-400">   ,       </p>
             </div>
           </div>
           <span id="userBroadcastCountBadge" class="text-xs px-2.5 py-0.5 rounded-full bg-amber-950 text-amber-300 font-bold border border-amber-800">0 Users</span>
@@ -211,39 +211,39 @@
 
         <div class="space-y-3">
           <div>
-            <label class="block text-xs font-bold text-slate-300 mb-1">📢 ইনবক্স বার্তার বিষয়বস্তু (Text Message):</label>
-            <textarea id="userBcText" rows="4" placeholder="👋 হ্যালো! আপনার টেলিগ্রাম গ্রুপ সম্পূর্ণ নিরাপদ রাখতে আমাদের নতুন গ্রুপ গার্ড ব্যবহার করুন..." class="w-full p-3 rounded-xl border border-slate-700 bg-slate-900 text-xs text-slate-200 font-sans"></textarea>
+            <label class="block text-xs font-bold text-slate-300 mb-1">    (Text Message):</label>
+            <textarea id="userBcText" rows="4" placeholder=" !            ..." class="w-full p-3 rounded-xl border border-slate-700 bg-slate-900 text-xs text-slate-200 font-sans"></textarea>
           </div>
 
           <div>
-            <label class="block text-xs font-bold text-slate-300 mb-1">🔗 ওয়েবসাইট ও চ্যানেল বাটন (নাম, লিংক ও কালার দিন):</label>
-            <textarea id="userBcButtons" rows="2" placeholder="🛡️ আপনার গ্রুপ সুরক্ষা দিন | https://myalor-hawa.shop&#10;মেইন চ্যানেল | https://t.me/mychannel" class="w-full p-2.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-mono text-slate-200"></textarea>
+            <label class="block text-xs font-bold text-slate-300 mb-1">     (,    ):</label>
+            <textarea id="userBcButtons" rows="2" placeholder="     | https://myalor-hawa.shop&#10;  | https://t.me/mychannel" class="w-full p-2.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-mono text-slate-200"></textarea>
           </div>
 
           <button onclick="sendUserInboxBroadcast()" id="userBcBtn" class="w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 text-slate-950 text-xs font-bold shadow-lg transition flex items-center justify-center gap-2 active:scale-[0.98]">
             <i data-lucide="send" class="w-4 h-4"></i>
-            <span>Send to All Users Inbox (সকল ইউজারের ইনবক্সে পাঠান)</span>
+            <span>Send to All Users Inbox (   )</span>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- ==================== 🌟 NEW TAB: ALL USERS DIRECTORY 🌟 ==================== -->
+    <!-- ==================== TAB: ALL USERS DIRECTORY ==================== -->
     <div id="tabContent-usersDir" class="tab-pane hidden space-y-4">
       <div class="glass-card rounded-2xl p-4 sm:p-5 space-y-3">
         <div class="flex items-center justify-between pb-2 border-b border-slate-800">
           <div>
             <h3 class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
               <i data-lucide="users" class="w-4 h-4 text-emerald-400"></i>
-              <span>সকল ইউজারের তালিকা</span>
+              <span>  </span>
             </h3>
-            <p class="text-xs text-slate-400">ইউজার প্যানেল বা বটে প্রবেশ করা ইউজারদের নাম ও আইডি।</p>
+            <p class="text-xs text-slate-400">         </p>
           </div>
-          <button onclick="loadDashboardData(true)" class="text-xs text-brand-400 font-bold hover:underline">🔄 রিফ্রেশ</button>
+          <button onclick="loadDashboardData(true)" class="text-xs text-brand-400 font-bold hover:underline"> </button>
         </div>
 
         <div class="flex gap-2">
-          <input type="text" id="manualUserIdInput" placeholder="ইউজার আইডি হাতে যোগ করুন (123456789)" class="flex-1 px-3 py-2 rounded-xl border border-slate-700 bg-slate-900 text-xs font-mono text-white" />
+          <input type="text" id="manualUserIdInput" placeholder="     (123456789)" class="flex-1 px-3 py-2 rounded-xl border border-slate-700 bg-slate-900 text-xs font-mono text-white" />
           <button onclick="addManualUser()" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold active:scale-95 transition">Add</button>
         </div>
 
@@ -258,11 +258,11 @@
           <div>
             <h3 class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
               <i data-lucide="layers" class="w-4 h-4 text-brand-400"></i>
-              <span>সকল গ্রুপের পূর্ণাঙ্গ বিবরণ</span>
+              <span>   </span>
             </h3>
-            <p class="text-xs text-slate-400">গ্রুপের নাম, আইডি ও মেম্বার তালিকা।</p>
+            <p class="text-xs text-slate-400"> ,    </p>
           </div>
-          <button onclick="loadDashboardData(true)" class="text-xs text-brand-400 font-bold hover:underline">🔄 রিফ্রেশ</button>
+          <button onclick="loadDashboardData(true)" class="text-xs text-brand-400 font-bold hover:underline"> </button>
         </div>
 
         <div id="groupsDirectoryList" class="space-y-2.5 pt-1"></div>
@@ -275,20 +275,20 @@
         <div class="flex items-center justify-between">
           <h3 class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
             <i data-lucide="megaphone" class="w-5 h-5 text-purple-400"></i>
-            <span>একযোগে সকল গ্রুপে ব্রডকাস্ট পাঠান</span>
+            <span>    </span>
           </h3>
           <span id="broadcastCountBadge" class="text-xs px-2 py-0.5 rounded-full bg-purple-950 text-purple-300 font-bold border border-purple-800">1 Groups</span>
         </div>
 
         <div class="space-y-3">
           <div>
-            <label class="block text-xs font-bold text-slate-300 mb-1">📢 বার্তার বিষয়বস্তু (Text Message):</label>
-            <textarea id="bcText" rows="4" placeholder="সকল গ্রুপের জন্য নোটিশ লিখুন..." class="w-full p-3 rounded-xl border border-slate-700 bg-slate-900 text-xs text-slate-200 font-sans"></textarea>
+            <label class="block text-xs font-bold text-slate-300 mb-1">   (Text Message):</label>
+            <textarea id="bcText" rows="4" placeholder="    ..." class="w-full p-3 rounded-xl border border-slate-700 bg-slate-900 text-xs text-slate-200 font-sans"></textarea>
           </div>
 
           <div>
-            <label class="block text-xs font-bold text-slate-300 mb-1">🔗 ইনলাইন বাটন (নাম, লিংক ও কালার দিন):</label>
-            <textarea id="bcButtons" rows="2" placeholder="মেইন চ্যানেল | https://t.me/mychannel&#10;ওয়েবসাইট | https://myalor-hawa.shop" class="w-full p-2.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-mono text-slate-200"></textarea>
+            <label class="block text-xs font-bold text-slate-300 mb-1">   (,    ):</label>
+            <textarea id="bcButtons" rows="2" placeholder="  | https://t.me/mychannel&#10; | https://myalor-hawa.shop" class="w-full p-2.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-mono text-slate-200"></textarea>
           </div>
 
           <button onclick="sendMasterBroadcast()" id="bcBtn" class="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 text-white text-xs font-bold shadow-lg transition flex items-center justify-center gap-2 active:scale-[0.98]">
@@ -305,25 +305,25 @@
         <div>
           <h3 class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
             <i data-lucide="message-square" class="w-5 h-5 text-blue-400"></i>
-            <span>নির্দিষ্ট ইউজারকে পার্সোনাল মেসেজ পাঠান (Direct Message)</span>
+            <span>     (Direct Message)</span>
           </h3>
-          <p class="text-xs text-slate-400">ইউজারের বটের ইনবক্সে সরাসরি মেসেজ ও বাটন চলে যাবে।</p>
+          <p class="text-xs text-slate-400">        </p>
         </div>
 
         <div class="space-y-3">
           <div>
-            <label class="block text-xs font-bold text-slate-300 mb-1">👤 টার্গেট ইউজারের Telegram User ID:</label>
+            <label class="block text-xs font-bold text-slate-300 mb-1">   Telegram User ID:</label>
             <input type="text" id="directUserIdInput" placeholder="123456789" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-mono text-white" />
           </div>
 
           <div>
-            <label class="block text-xs font-bold text-slate-300 mb-1">💬 মেসেজের টেক্সট:</label>
-            <textarea id="directMsgText" rows="3" placeholder="ইউজারকে কী বার্তা পাঠাতে চান লিখুন..." class="w-full p-3 rounded-xl border border-slate-700 bg-slate-900 text-xs text-slate-200 font-sans"></textarea>
+            <label class="block text-xs font-bold text-slate-300 mb-1">  :</label>
+            <textarea id="directMsgText" rows="3" placeholder="     ..." class="w-full p-3 rounded-xl border border-slate-700 bg-slate-900 text-xs text-slate-200 font-sans"></textarea>
           </div>
 
           <div>
-            <label class="block text-xs font-bold text-slate-300 mb-1">🔗 ইনলাইন বাটন (নাম, লিংক ও কালার দিন):</label>
-            <textarea id="directMsgButtons" rows="2" placeholder="যোগাযোগ করুন | https://t.me/admin" class="w-full p-2.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-mono text-slate-200"></textarea>
+            <label class="block text-xs font-bold text-slate-300 mb-1">   (,    ):</label>
+            <textarea id="directMsgButtons" rows="2" placeholder="  | https://t.me/admin" class="w-full p-2.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-mono text-slate-200"></textarea>
           </div>
 
           <button onclick="sendDirectUserMessage()" class="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold shadow-md transition flex items-center justify-center gap-2">
@@ -342,7 +342,7 @@
     const WORKER_URL = "https://groupguard.myalorhawa.workers.dev";
     
     let defaultGroupList = [
-      { id: "-1002680814875", title: "আলোর হাওয়া গ্রুপ", username: "" }
+      { id: "-1002680814875", title: "  ", username: "" }
     ];
 
     let allGroups = [];
@@ -351,12 +351,15 @@
     document.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
       initButtonEditors(['userBcButtons', 'bcButtons', 'directMsgButtons']);
-      // আগে সেভ করা ইউজার তালিকা লোড
+      
+      //     
       try {
-        JSON.parse(localStorage.getItem('agg_admin_users') || '[]').forEach(u => {
+        const savedUsers = JSON.parse(localStorage.getItem('agg_admin_users') || '[]');
+        savedUsers.forEach(u => {
           if (u && u.id) discoveredUsers.set(String(u.id), u);
         });
       } catch (e) {}
+
       loadDashboardData();
     });
 
@@ -375,7 +378,7 @@
       } catch (e) {}
     }
 
-    // --- 🌟 LIVE SYNC ENGINE (GROUPS + USERS) 🌟 ---
+    // ---  LIVE SYNC ENGINE (GROUPS + PERMANENT USERS)  ---
     async function loadDashboardData(showToastMsg = false) {
       const spinner = document.getElementById('syncSpinner');
       if (spinner) spinner.classList.add('animate-spin');
@@ -386,7 +389,7 @@
         localStorage.setItem('agg_admin_groups', JSON.stringify(saved));
       }
 
-      // 1) Worker থেকে ইউজার প্যানেলে প্রবেশ করা ইউজারদের তালিকা লোড
+      // ) Worker    
       try {
         const wr = await fetch(`${WORKER_URL}/api/users`);
         const wd = await wr.json();
@@ -403,7 +406,7 @@
         }
       } catch (e) {}
 
-      // 2) ব্যাকআপ স্ক্যান: টেলিগ্রাম বটে যারা /start দিয়েছে বা মেসেজ করেছে তাদের স্বয়ংক্রিয়ভাবে ক্যাচ করা
+      // )  API      (     )
       try {
         const updatesRes = await callTelegram('getUpdates', { limit: 100 });
         if (updatesRes.ok && Array.isArray(updatesRes.result)) {
@@ -457,7 +460,7 @@
       renderUsersList();
 
       if (spinner) spinner.classList.remove('animate-spin');
-      if (showToastMsg) showToast("সকল গ্রুপ ও ইউজার লাইভ সিঙ্ক হয়েছে!", "success");
+      if (showToastMsg) showToast("      !", "success");
     }
 
     function renderGroupsList() {
@@ -484,7 +487,7 @@
       lucide.createIcons();
     }
 
-    // --- 🌟 USERS LIST RENDERER 🌟 ---
+    // ---  USERS LIST RENDERER  ---
     function renderUsersList() {
       const overviewList = document.getElementById('overviewUsersList');
       const dirList = document.getElementById('usersDirectoryList');
@@ -494,7 +497,7 @@
       const users = Array.from(discoveredUsers.values());
 
       if (users.length === 0) {
-        const empty = `<p class="text-xs text-slate-500 py-4 text-center">এখনো কোনো ইউজার পাওয়া যায়নি। ইউজার প্যানেলে কেউ প্রবেশ করলে এখানে দেখা যাবে।</p>`;
+        const empty = `<p class="text-xs text-slate-500 py-4 text-center">            </p>`;
         overviewList.innerHTML = empty;
         dirList.innerHTML = empty;
         lucide.createIcons();
@@ -516,7 +519,7 @@
               </div>
             </div>
             <div class="flex items-center gap-1.5 flex-shrink-0">
-              <button onclick="quickMessageUser('${escapeHtml(u.id)}')" class="px-2.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold">মেসেজ</button>
+              <button onclick="quickMessageUser('${escapeHtml(u.id)}')" class="px-2.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold"></button>
               <button onclick="removeUser('${escapeHtml(u.id)}')" class="p-1.5 text-slate-500 hover:text-red-500" title="Remove"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
             </div>
           `;
@@ -542,13 +545,13 @@
       document.getElementById('sideUsersDirBadge').innerText = c;
       document.getElementById('userBroadcastCountBadge').innerText = `${c} Users`;
       renderUsersList();
-      showToast("ইউজার তালিকা থেকে সরানো হয়েছে", "info");
+      showToast("    ", "info");
     }
 
     async function addManualUser() {
       const input = document.getElementById('manualUserIdInput');
       const uid = input.value.trim();
-      if (!/^\d+$/.test(uid)) return showToast("সঠিক ইউজার আইডি (শুধু সংখ্যা) লিখুন", "warning");
+      if (!/^\d+$/.test(uid)) return showToast("   ( ) ", "warning");
 
       let name = 'User';
       let username = '';
@@ -573,20 +576,20 @@
       document.getElementById('sideUsersDirBadge').innerText = c;
       document.getElementById('userBroadcastCountBadge').innerText = `${c} Users`;
       renderUsersList();
-      showToast("ইউজার সফলভাবে যোগ হয়েছে!", "success");
+      showToast("   !", "success");
     }
 
-    // --- 🌟 SEND BROADCAST TO ALL USERS INBOX 🌟 ---
+    // ---  SEND BROADCAST TO ALL USERS INBOX  ---
     async function sendUserInboxBroadcast() {
       const text = document.getElementById('userBcText').value.trim();
       const btnRaw = document.getElementById('userBcButtons').value.trim();
-      if (!text) return showToast("ইনবক্স বার্তার টেক্সট লিখুন", "warning");
+      if (!text) return showToast("   ", "warning");
 
       const userList = Array.from(discoveredUsers.values());
-      if (userList.length === 0) return showToast("কোনো ইউজার পাওয়া যায়নি। আগে ইউজার তালিকা সিঙ্ক করুন", "warning");
+      if (userList.length === 0) return showToast("        ", "warning");
 
       const btn = document.getElementById('userBcBtn');
-      btn.innerHTML = `<span>ইউজারদের ইনবক্সে পাঠানো হচ্ছে...</span>`;
+      btn.innerHTML = `<span>   ...</span>`;
       btn.disabled = true;
 
       const markup = parseInlineButtons(btnRaw);
@@ -602,7 +605,6 @@
             parse_mode: 'HTML',
             reply_markup: markup
           });
-          // HTML পার্সিং এরর হলে প্লেইন টেক্সটে চেষ্টা
           if (!res.ok && /parse entities/i.test(res.description || '')) {
             res = await callTelegram('sendMessage', {
               chat_id: u.id,
@@ -622,17 +624,17 @@
         await new Promise(r => setTimeout(r, 50));
       }
 
-      btn.innerHTML = `<i data-lucide="send" class="w-4 h-4"></i><span>Send to All Users Inbox (সকল ইউজারের ইনবক্সে পাঠান)</span>`;
+      btn.innerHTML = `<i data-lucide="send" class="w-4 h-4"></i><span>Send to All Users Inbox (   )</span>`;
       btn.disabled = false;
       lucide.createIcons();
 
       if (sent > 0) {
-        showToast(`সফলভাবে ${sent}/${userList.length} জন ইউজারের ইনবক্সে পাঠানো হয়েছে!`, "success");
+        showToast(` ${sent}/${userList.length}     !`, "success");
       } else {
-        showToast(`কাউকে পাঠানো যায়নি! কারণ: ${firstError}`, "error");
+        showToast(`  ! : ${firstError}`, "error");
       }
       if (sent > 0 && failed > 0) {
-        setTimeout(() => showToast(`${failed} জনকে পাঠানো যায়নি: ${firstError}`, "warning"), 600);
+        setTimeout(() => showToast(`${failed}   : ${firstError}`, "warning"), 600);
       }
     }
 
@@ -640,11 +642,11 @@
     async function sendMasterBroadcast() {
       const text = document.getElementById('bcText').value.trim();
       const btnRaw = document.getElementById('bcButtons').value.trim();
-      if (!text) return showToast("মেসেজ লিখুন", "warning");
-      if (allGroups.length === 0) return showToast("কোনো গ্রুপ পাওয়া যায়নি", "warning");
+      if (!text) return showToast(" ", "warning");
+      if (allGroups.length === 0) return showToast("   ", "warning");
 
       const btn = document.getElementById('bcBtn');
-      btn.innerHTML = `<span>গ্রুপগুলোতে পাঠানো হচ্ছে...</span>`;
+      btn.innerHTML = `<span>  ...</span>`;
       btn.disabled = true;
 
       const markup = parseInlineButtons(btnRaw);
@@ -666,7 +668,7 @@
       btn.disabled = false;
       lucide.createIcons();
 
-      showToast(`সফলভাবে ${sent}/${allGroups.length} টি গ্রুপে পাঠানো হয়েছে!`, "success");
+      showToast(` ${sent}/${allGroups.length}    !`, "success");
     }
 
     async function sendDirectUserMessage() {
@@ -674,10 +676,10 @@
       const text = document.getElementById('directMsgText').value.trim();
       const btnRaw = document.getElementById('directMsgButtons').value.trim();
 
-      if (!userId || !text) return showToast("User ID ও মেসেজ লিখুন", "warning");
+      if (!userId || !text) return showToast("User ID   ", "warning");
 
       const markup = parseInlineButtons(btnRaw);
-      showToast("মেসেজ পাঠানো হচ্ছে...", "info");
+      showToast("  ...", "info");
 
       try {
         const res = await callTelegram('sendMessage', {
@@ -688,34 +690,34 @@
         });
 
         if (res.ok) {
-          showToast(`ইউজার ${userId}-এর ইনবক্সে মেসেজ চলে গেছে!`, "success");
+          showToast(` ${userId}-    !`, "success");
           document.getElementById('directMsgText').value = '';
         } else {
-          showToast(`ব্যর্থ: ${res.description || "ইউজার বটকে স্টার্ট করেনি"}`, "error");
+          showToast(`: ${res.description || "   "}`, "error");
         }
       } catch (e) {
-        showToast("মেসেজ পাঠানো যায়নি", "error");
+        showToast("  ", "error");
       }
     }
 
     async function initWebhook() {
-      showToast("Webhook সক্রিয় করা হচ্ছে...", "info");
+      showToast("Webhook   ...", "info");
       try {
         const res = await fetch(`${WORKER_URL}/api/init-webhook`);
         const data = await res.json();
-        if (data.ok) showToast("২৪/৭ Webhook সফলভাবে চালু হয়েছে!", "success");
+        if (data.ok) showToast("/ Webhook   !", "success");
         else showToast("Error: " + (data.description || "Failed"), "error");
       } catch (e) {
-        showToast("কানেকশন ব্যর্থ", "error");
+        showToast(" ", "error");
       }
     }
 
-    // --- 🌟 EASY BUTTON EDITOR (নাম, লিংক ও কালার সহজে সেট করুন) 🌟 ---
+    // ---  EASY BUTTON EDITOR  ---
     const BTN_COLOR_OPTIONS = [
-      { key: '',      label: 'সাধারণ', dot: 'bg-slate-400',   fill: 'bg-slate-500 border-slate-500 text-white' },
-      { key: 'red',   label: 'লাল',    dot: 'bg-red-500',     fill: 'bg-red-500 border-red-500 text-white' },
-      { key: 'blue',  label: 'নীল',    dot: 'bg-blue-500',    fill: 'bg-blue-500 border-blue-500 text-white' },
-      { key: 'green', label: 'সবুজ',   dot: 'bg-emerald-500', fill: 'bg-emerald-500 border-emerald-500 text-white' }
+      { key: '',      label: '', dot: 'bg-slate-400',   fill: 'bg-slate-500 border-slate-500 text-white' },
+      { key: 'red',   label: '',    dot: 'bg-red-500',     fill: 'bg-red-500 border-red-500 text-white' },
+      { key: 'blue',  label: '',    dot: 'bg-blue-500',    fill: 'bg-blue-500 border-blue-500 text-white' },
+      { key: 'green', label: '',   dot: 'bg-emerald-500', fill: 'bg-emerald-500 border-emerald-500 text-white' }
     ];
     const ButtonEditorState = {};
 
@@ -773,14 +775,14 @@
         const nameIn = document.createElement('input');
         nameIn.type = 'text';
         nameIn.value = r.name;
-        nameIn.placeholder = 'বাটনের নাম (যেমন: 📜 গ্রুপের নিয়ম)';
+        nameIn.placeholder = '  (:   )';
         nameIn.className = inputCls;
         nameIn.addEventListener('input', () => { r.name = nameIn.value; syncButtonTextarea(id); });
 
         const urlIn = document.createElement('input');
         urlIn.type = 'text';
         urlIn.value = r.url;
-        urlIn.placeholder = 'লিংক (যেমন: https://t.me/mychannel)';
+        urlIn.placeholder = ' (: https://t.me/mychannel)';
         urlIn.className = inputCls + ' font-mono';
         urlIn.addEventListener('input', () => { r.url = urlIn.value; syncButtonTextarea(id); });
         urlIn.addEventListener('blur', () => {
@@ -804,7 +806,7 @@
               ? o.fill
               : 'border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300');
           b.innerHTML = active
-            ? `<span>✔</span><span>${o.label}</span>`
+            ? `<span></span><span>${o.label}</span>`
             : `<span class="w-2.5 h-2.5 rounded-full ${o.dot}"></span><span>${o.label}</span>`;
           b.addEventListener('click', () => { r.color = o.key; syncButtonTextarea(id); renderButtonEditor(id); });
           colors.appendChild(b);
@@ -813,7 +815,7 @@
         const del = document.createElement('button');
         del.type = 'button';
         del.className = 'px-2.5 py-1 rounded-lg text-[11px] font-bold text-red-500 border border-red-300 dark:border-red-900 hover:bg-red-50 dark:hover:bg-red-950/40 transition flex-shrink-0';
-        del.innerText = '🗑️ মুছুন';
+        del.innerText = ' ';
         del.addEventListener('click', () => {
           ButtonEditorState[id].splice(idx, 1);
           syncButtonTextarea(id);
@@ -831,7 +833,7 @@
       const add = document.createElement('button');
       add.type = 'button';
       add.className = 'w-full py-2 rounded-xl border border-dashed border-slate-400 dark:border-slate-600 text-xs font-bold text-brand-600 dark:text-brand-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition';
-      add.innerText = '➕ নতুন বাটন যোগ করুন';
+      add.innerText = '    ';
       add.addEventListener('click', () => {
         (ButtonEditorState[id] = ButtonEditorState[id] || []).push({ name: '', url: '', color: '' });
         renderButtonEditor(id);
@@ -840,7 +842,7 @@
 
       const hint = document.createElement('p');
       hint.className = 'text-[10px] text-slate-500';
-      hint.innerText = 'রঙিন বাটন শুধু আপডেট করা টেলিগ্রাম অ্যাপে দেখা যায়। "সাধারণ" মানে টেলিগ্রামের নিজস্ব ডিফল্ট রঙ।';
+      hint.innerText = '         ""     ';
       box.appendChild(hint);
     }
 
